@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(182, 182, 182);
+}
+
+.navbar-title {
+  margin: 0 50px;
+}
+
+.links {
+  margin: 0 30px;
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+}

@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.scss';
 import Navbar from './pages/navbar';
 import Home from './pages/home';
-import Author from './pages/author';
+import Categories from './pages/category';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/author" element={<Author />} />
+          <Route path="/author" element={<Categories />} />
         </Routes>
       </Router>
     </>

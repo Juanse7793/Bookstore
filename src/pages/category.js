@@ -1,12 +1,12 @@
 import React from 'react';
 import './Style.css';
 
-const Author = () => (
-  <div className="Author">
-    <div className="Author-title">
+const Categories = () => (
+  <div className="Categories">
+    <div className="Categories-title">
       <button type="button">Check Status</button>
     </div>
   </div>
 );
 
-export default Author;
+export default Categories;

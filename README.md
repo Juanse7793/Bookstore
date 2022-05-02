@@ -3,6 +3,7 @@
 ## Built With
 
 - React
+- Redux
 - JavaScript
 - Webpack
 - Gitflow
@@ -10,9 +11,7 @@
 
 ## Live Demo
 
-- Watch the live demo with [Netlify](https://math-magicians-jsotomayor.netlify.app/)
-
-- Watch the live demo with [Heroku](https://math-magicians-jsotomayor.herokuapp.com/)
+Coming soon!
 
 ## Run it
 
@@ -23,10 +22,10 @@ Use the following steps to run this Project locally:
 - Open the terminal
 
 - Run this command:
-`git clone git@github.com:Juanse7793/Math-Magicians.git`
+`git clone git@github.com:Juanse7793/Bookstore.git`
 
 - Enter in to the folder:
-`cd Math-Magicians`
+`cd Bookstore`
 
 - Open the folder with a code editor (VS Code preferred)
 

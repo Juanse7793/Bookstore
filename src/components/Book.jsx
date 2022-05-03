@@ -7,7 +7,7 @@ const Book = (props) => {
     <li className="book" key={title}>
       <p>
         {title}
-        by
+        &nbsp; by &nbsp;
         {author}
       </p>
       <button type="button">Delete</button>

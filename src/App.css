@@ -235,3 +235,32 @@
     transform: rotate(135deg);
   }
 }
+
+.second {
+  display: flex;
+  align-items: center;
+}
+
+.percentage {
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.completed {
+  margin: 0;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}

@@ -10,7 +10,11 @@ const AddBook = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addBook({ title, author, category: 'Any' }));
+    dispatch(addBook({
+      title,
+      author,
+      category: 'Any',
+    }));
     setTitle('');
     setAuthor('');
   };

@@ -13,9 +13,9 @@ export default function booksReducer(
     case GET_BOOK:
       return [...state, action.payload];
     case ADD_BOOK:
-      return [...state, action.book];
+      return [...state, action.payload];
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.id);
+      return state.filter((book) => book.item_id !== action.id);
     default:
       return state;
   }

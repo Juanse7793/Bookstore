@@ -7,10 +7,6 @@ const Book = (props) => {
   const { title, author, id } = props;
   const dispatch = useDispatch();
 
-  const handleRemove = () => {
-    dispatch(removeBook(id));
-  };
-
   return (
     <li className="book" key={title}>
       <p>
@@ -18,7 +14,7 @@ const Book = (props) => {
         &nbsp; by &nbsp;
         {author}
       </p>
-      <button type="button" onClick={() => handleRemove()}>Delete</button>
+      <button type="button" onClick={() => dispatch(removeBook(id))}>Delete</button>
     </li>
   );
 };

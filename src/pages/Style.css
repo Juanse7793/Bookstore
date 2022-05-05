@@ -14,6 +14,13 @@
   margin: 0 1rem 0 3rem;
 }
 
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
 .links-books {
   width: 3.688rem;
   height: 1rem;

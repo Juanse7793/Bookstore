@@ -10,31 +10,39 @@ const AddBook = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addBook({
-      title,
-      author,
-      category: 'Any',
-    }));
+    dispatch(
+      addBook({
+        title,
+        author,
+        category: 'Any',
+      }),
+    );
     setTitle('');
     setAuthor('');
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Title"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="Author"
-        value={author}
-        onChange={(e) => setAuthor(e.target.value)}
-      />
-      <button type="submit">Add Book</button>
-    </form>
+    <>
+      <div className="Line" />
+      <span className="add-title">ADD NEW BOOK</span>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          className="title-form"
+          placeholder="Title"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+        <input
+          type="text"
+          className="author-form"
+          placeholder="Author"
+          value={author}
+          onChange={(e) => setAuthor(e.target.value)}
+        />
+        <button type="submit" className="add-btn"><span className="add-btn-text">ADD BOOK</span></button>
+      </form>
+    </>
   );
 };
 

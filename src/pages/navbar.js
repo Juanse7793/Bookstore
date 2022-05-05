@@ -12,7 +12,7 @@ const Navbar = () => (
       <a className="links-categories" href="/categories">CATEGORIES</a>
     </div>
     <div className="circle-person">
-      <Icon icon="bi:person-fill" />
+      <Icon className="icon" icon="bi:person-fill" />
     </div>
   </div>
 );

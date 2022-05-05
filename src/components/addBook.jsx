@@ -22,7 +22,7 @@ const AddBook = () => {
   };
 
   return (
-    <>
+    <div className="main-add">
       <div className="Line" />
       <span className="add-title">ADD NEW BOOK</span>
       <form onSubmit={handleSubmit}>
@@ -42,7 +42,7 @@ const AddBook = () => {
         />
         <button type="submit" className="add-btn"><span className="add-btn-text">ADD BOOK</span></button>
       </form>
-    </>
+    </div>
   );
 };
 

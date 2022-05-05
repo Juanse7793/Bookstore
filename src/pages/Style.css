@@ -58,3 +58,18 @@
   letter-spacing: normal;
   color: #0290ff;
 }
+
+.circle-person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.813rem;
+  height: 2.813rem;
+  border-radius: 75px;
+  border: solid 1px #e8e8e8;
+  margin: 0 10% 0 0;
+}
+
+.icon {
+  color: #0290ff;
+}

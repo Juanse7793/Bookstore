@@ -13,7 +13,7 @@
 }
 
 .title-form {
-  width: 25rem;
+  width: 40%;
   height: 1.8rem;
   font-family: Montserrat;
   font-size: 0.7rem;
@@ -29,7 +29,7 @@
 }
 
 .author-form {
-  width: 25rem;
+  width: 38%;
   height: 1.80rem;
   font-family: Montserrat;
   font-size: 0.65rem;
@@ -51,7 +51,7 @@
 }
 
 .add-btn {
-  width: 8rem;
+  width: 10%;
   height: 1.8rem;
   border-radius: 3px;
   background-color: #0290ff;
@@ -71,7 +71,7 @@
 }
 
 .Line {
-  width: 75rem;
+  width: 97.5%;
   height: 0.01rem;
   margin: 2.5rem 0.063rem 1.813rem 0;
   border: solid 1px #e8e8e8;
@@ -96,7 +96,6 @@
 .category-change {
   padding: 0 20px;
   opacity: 0.5;
-  
   font-family: Montserrat;
   font-size: 0.875rem;
   font-weight: bold;
@@ -312,4 +311,16 @@
   letter-spacing: 0.5px;
   text-align: center;
   color: #ffffff;
+}
+
+.main-add {
+  margin: 0 40px 20px 40px;
+  width: 90%;
+}
+
+.form {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
 }

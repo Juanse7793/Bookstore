@@ -1,5 +1,6 @@
 import React from 'react';
 import './Style.css';
+import { Icon } from '@iconify/react';
 
 const Navbar = () => (
   <div className="navbar">
@@ -9,6 +10,9 @@ const Navbar = () => (
     <div className="navbar-links">
       <a className="links-books" href="/">BOOKS</a>
       <a className="links-categories" href="/categories">CATEGORIES</a>
+    </div>
+    <div className="circle-person">
+      <Icon icon="bi:person-fill" />
     </div>
   </div>
 );

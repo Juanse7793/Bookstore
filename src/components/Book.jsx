@@ -50,9 +50,9 @@ const Book = (props) => {
           </div>
         </div>
         <div className="third">
-          <p>CURRENT CHAPTER</p>
-          <p>Chapter 17</p>
-          <button type="button">UPDATE PROGRESS</button>
+          <p className="current">CURRENT CHAPTER</p>
+          <p className="chapter">Chapter 17</p>
+          <button className="progress-btn" type="button"><span className="progress">UPDATE PROGRESS</span></button>
         </div>
       </div>
     </li>

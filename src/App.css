@@ -1,14 +1,29 @@
+:root {
+  --black: #121212;
+  --azure: #0290ff;
+  --blue: #4386bf;
+  --gray: #e8e8e8;
+  --Montserrat: 'Montserrat', sans-serif;
+  --RobotoSlab: 'Roboto Slab', sans-serif;
+}
+
+.weight {
+  font-weight: bold;
+}
+
+.repeated {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
 .add-title {
   color: #888;
   width: 10.875rem;
   height: 1.5rem;
   margin: 1.813rem 32.75rem 1.188rem 0;
-  font-family: Montserrat, sans-serif;
+  font-family: var(--Montserrat);
   font-size: 1.25rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.18px;
 }
 
@@ -37,40 +52,29 @@
 .category-change {
   padding: 0 20px;
   opacity: 0.5;
-  font-family: Montserrat, sans-serif;
+  font-family: var(--Montserrat);
   font-size: 0.875rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
-  color: #121212;
+  color: var(--black);
 }
 
 .title-change {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: var(--RobotoSlab);
   margin: 0;
   padding: 0 20px;
   font-size: 1.375rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.2px;
-  color: #121212;
+  color: var(--black);
 }
 
 .author-change {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: var(--RobotoSlab);
   padding: 0 20px;
   font-size: 0.875rem;
   margin: 0;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
-  color: #4386bf;
+  color: var(--blue);
 }
 
 .combtn-change,
@@ -79,15 +83,12 @@
   background-color: #fff;
   padding: 0 20px;
   border: none;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: var(--RobotoSlab);
   margin: 30px 0;
   font-size: 0.875rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
-  color: #4386bf;
+  color: var(--blue);
 }
 
 .Line-2 {
@@ -171,26 +172,20 @@
 
 .percentage {
   margin: 0;
-  font-family: Montserrat, sans-serif;
+  font-family: var(--Montserrat);
   font-size: 2rem;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
 }
 
 .completed {
   margin: 0;
   opacity: 0.5;
-  font-family: Montserrat, sans-serif;
+  font-family: var(--Montserrat);
   font-size: 0.875rem;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
-  color: #121212;
+  color: var(--black);
 }
 
 .third {
@@ -200,42 +195,33 @@
 .current {
   opacity: 0.5;
   margin: 1.5rem 0 0 0;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: var(--RobotoSlab);
   font-size: 0.813rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
-  color: #121212;
+  color: var(--black);
 }
 
 .chapter {
   margin: 5px 0 25px 0;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: var(--RobotoSlab);
   font-size: 1rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.4px;
-  color: #121212;
+  color: var(--black);
 }
 
 .progress-btn {
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border-radius: 3px;
-  background-color: #0290ff;
+  background-color: var(--azure);
   border: none;
 }
 
 .progress {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: var(--RobotoSlab);
   font-size: 0.813rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
   color: #fff;
@@ -256,14 +242,11 @@
 .title-form {
   width: 42%;
   height: 1.8rem;
-  font-family: Montserrat, sans-serif;
+  font-family: var(--Montserrat);
   font-size: 0.7rem;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.15px;
-  color: #121212;
+  color: var(--black);
   padding: 0 0.8rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
@@ -272,14 +255,11 @@
 .author-form {
   width: 42%;
   height: 1.8rem;
-  font-family: Montserrat, sans-serif;
+  font-family: var(--Montserrat);
   font-size: 0.65rem;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.15px;
-  color: #121212;
+  color: var(--black);
   margin: 1.2rem 2.4rem;
   padding: 0 0.8rem;
   border-radius: 4px;
@@ -295,18 +275,14 @@
   width: 14%;
   height: 1.8rem;
   border-radius: 3px;
-  background-color: #0290ff;
+  background-color: var(--azure);
   color: #fff;
   border: none;
 }
 
 .add-btn-text {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: var(--RobotoSlab);
   font-size: 0.6rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
 }

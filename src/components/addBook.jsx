@@ -24,23 +24,23 @@ const AddBook = () => {
   return (
     <div className="main-add">
       <div className="Line" />
-      <span className="add-title">ADD NEW BOOK</span>
+      <span className="add-title weight repeated">ADD NEW BOOK</span>
       <form className="form" onSubmit={handleSubmit}>
         <input
           type="text"
-          className="title-form"
+          className="title-form repeated"
           placeholder="Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
         <input
           type="text"
-          className="author-form"
+          className="author-form repeated"
           placeholder="Author"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
-        <button type="submit" className="add-btn"><span className="add-btn-text">ADD BOOK</span></button>
+        <button type="submit" className="add-btn"><span className="add-btn-text weight repeated">ADD BOOK</span></button>
       </form>
     </div>
   );

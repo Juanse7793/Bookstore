@@ -11,23 +11,23 @@ const Book = (props) => {
     <li className="book-individual" key={id}>
       <div className="super">
         <div className="Main">
-          <p className="category-change">Category</p>
-          <p className="title-change">{title}</p>
-          <p className="author-change">{author}</p>
+          <p className="category-change weight repeated">Category</p>
+          <p className="title-change weight repeated">{title}</p>
+          <p className="author-change repeated">{author}</p>
           <div className="btns-container">
-            <button type="button" className="combtn-change">
+            <button type="button" className="combtn-change repeated">
               Comments
             </button>
             <div className="Line-2" />
             <button
-              className="rembtn-change"
+              className="rembtn-change repeated"
               type="button"
               onClick={() => dispatch(removeBook(id))}
             >
               Remove
             </button>
             <div className="Line-2" />
-            <button type="button" className="edbtn-change">
+            <button type="button" className="edbtn-change repeated">
               Edit
             </button>
           </div>
@@ -45,14 +45,14 @@ const Book = (props) => {
             </div>
           </div>
           <div className="Datas">
-            <p className="percentage">75%</p>
-            <p className="completed">completed</p>
+            <p className="percentage repeated">75%</p>
+            <p className="completed repeated">completed</p>
           </div>
         </div>
         <div className="third">
-          <p className="current">CURRENT CHAPTER</p>
-          <p className="chapter">Chapter 17</p>
-          <button className="progress-btn" type="button"><span className="progress">UPDATE PROGRESS</span></button>
+          <p className="current repeated">CURRENT CHAPTER</p>
+          <p className="chapter repeated">Chapter 17</p>
+          <button className="progress-btn" type="button"><span className="progress repeated">UPDATE PROGRESS</span></button>
         </div>
       </div>
     </li>

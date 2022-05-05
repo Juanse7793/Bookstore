@@ -1,5 +1,5 @@
 import { v4 as uuid } from 'uuid';
-import { fetchBooks, createBook } from './api';
+import { fetchBooks, createBook, deleteBook } from './api';
 
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
@@ -39,9 +39,11 @@ export const addBook = (book) => async (dispatch) => {
   return true;
 };
 
-export function removeBook(id) {
-  return {
+export const removeBook = (id) => async (dispatch) => {
+  await deleteBook(id);
+  dispatch({
     type: REMOVE_BOOK,
     id,
-  };
-}
+  });
+  return true;
+};

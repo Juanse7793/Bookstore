@@ -25,7 +25,7 @@ const AddBook = () => {
     <div className="main-add">
       <div className="Line" />
       <span className="add-title">ADD NEW BOOK</span>
-      <form onSubmit={handleSubmit}>
+      <form className="form" onSubmit={handleSubmit}>
         <input
           type="text"
           className="title-form"

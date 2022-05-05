@@ -1,5 +1,11 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+# Bookstore 
+
+## Description
+
+This is a book store SPA created on React that creates a library of books which can store books and its authors in an API also the app is showing the status of the book. The state is managed with Redux.
+
 ## Built With
 
 - React

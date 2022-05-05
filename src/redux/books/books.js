@@ -5,13 +5,10 @@ const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 const GET_BOOK = 'bookstore/books/GET_BOOK';
 
-export default function booksReducer(
-  state = [],
-  action,
-) {
+export default function booksReducer(state = [], action) {
   switch (action.type) {
     case GET_BOOK:
-      return [...state, action.payload];
+      return [...state, ...action.payload];
     case ADD_BOOK:
       return [...state, action.payload];
     case REMOVE_BOOK:
@@ -22,28 +19,41 @@ export default function booksReducer(
 }
 
 export const getBooks = () => async (dispatch) => {
-  const books = await fetchBooks();
-  dispatch({
-    type: GET_BOOK,
-    payload: books,
-  });
+  let books;
+  try {
+    books = await fetchBooks();
+    dispatch({
+      type: GET_BOOK,
+      payload: books,
+    });
+  } catch (err) {
+    return err;
+  }
   return books;
 };
 
 export const addBook = (book) => async (dispatch) => {
-  const newBook = await createBook({ ...book, item_id: uuid() });
-  dispatch({
-    type: ADD_BOOK,
-    payload: newBook,
-  });
-  return true;
+  try {
+    const newBook = await createBook({ ...book, item_id: uuid() });
+    dispatch({
+      type: ADD_BOOK,
+      payload: newBook,
+    });
+    return true;
+  } catch (err) {
+    return err;
+  }
 };
 
 export const removeBook = (id) => async (dispatch) => {
-  await deleteBook(id);
-  dispatch({
-    type: REMOVE_BOOK,
-    id,
-  });
-  return true;
+  try {
+    await deleteBook(id);
+    dispatch({
+      type: REMOVE_BOOK,
+      id,
+    });
+    return true;
+  } catch (err) {
+    return err;
+  }
 };

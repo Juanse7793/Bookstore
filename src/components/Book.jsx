@@ -9,15 +9,47 @@ const Book = (props) => {
 
   return (
     <li className="book-individual" key={id}>
-      <p className="category-change">Category</p>
-      <p className="title-change">{title}</p>
-      <p className="author-change">{author}</p>
-      <div className="btns-container">
-        <button type="button" className="combtn-change">Comments</button>
-        <div className="Line-2" />
-        <button className="rembtn-change" type="button" onClick={() => dispatch(removeBook(id))}>Remove</button>
-        <div className="Line-2" />
-        <button type="button" className="edbtn-change">Edit</button>
+      <div className="super">
+        <div className="Main">
+          <p className="category-change">Category</p>
+          <p className="title-change">{title}</p>
+          <p className="author-change">{author}</p>
+          <div className="btns-container">
+            <button type="button" className="combtn-change">
+              Comments
+            </button>
+            <div className="Line-2" />
+            <button
+              className="rembtn-change"
+              type="button"
+              onClick={() => dispatch(removeBook(id))}
+            >
+              Remove
+            </button>
+            <div className="Line-2" />
+            <button type="button" className="edbtn-change">
+              Edit
+            </button>
+          </div>
+        </div>
+        <div className="second">
+          <div className="circle-wrap">
+            <div className="circle">
+              <div className="mask full">
+                <div className="fill" />
+              </div>
+              <div className="mask half">
+                <div className="fill" />
+              </div>
+              <div className="inside-circle" />
+            </div>
+          </div>
+        </div>
+        <div className="third">
+          <p>CURRENT CHAPTER</p>
+          <p>Chapter 17</p>
+          <button type="button">UPDATE PROGRESS</button>
+        </div>
       </div>
     </li>
   );

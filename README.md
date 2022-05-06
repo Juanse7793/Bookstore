@@ -17,7 +17,9 @@ This is a book store SPA created on React that creates a library of books which 
 
 ## Live Demo
 
-Coming soon!
+- Watch the live demo of the Bookstore with [Netlify](https://bookstore-juanse7793.netlify.app/)
+
+- Watch the live demo of the Bookstore with [Heroku](https://bookstore-juanse7793.herokuapp.com/)
 
 ## Run it
 
